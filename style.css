@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main container */
+.main-content {
+    margin-top: 120px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 380px;
+}
+
+/* Heading */
+.wishlist {
+    font-size: 36px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Form spacing */
+.todo-list {
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.input {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 8px;
+    width: 65%;
+}
+
+/* Input focus */
+.input:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-color: red;
+}
+
+/* Button */
+.btn {
+    padding: 10px 16px;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Button hover */
+.btn:hover {
+    background-color: darkred;
+}
+
+/* Todo items */
+.todo-container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Checkbox spacing */
+.todo-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Todo text */
+.todo {
+    flex: 1;
+    text-align: left;
+    margin-left: 8px;
+}
+
+/* Delete button */
+.todo-container button {
+    background: crimson;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-container button:hover {
+    background: darkred;
+}
+
+/* Completed task */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
